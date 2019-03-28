@@ -49,9 +49,9 @@ $(document).ready(function () {
     var slideControl = 0;
     var menuSize = 264;
     var size = -272;
-    $(document).ready(function(){
-      $('.navbar-main').css({width: menuSize});
-    });
+    // $(document).ready(function(){
+    //   $('.navbar-main').css({width: menuSize});
+    // });
     $('.js-navbar-toggle').on('click',function(){
       if(slideControl < 1){
         $('.section-main').animate({left: menuSize,opacity: '0.3'});

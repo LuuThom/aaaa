@@ -114,6 +114,7 @@ a {
     max-width: 1140px;
     .row {
       padding-top: $mt;
+      max-width: 75%;
       width: 100%;
       margin: auto;
       .project-template {
@@ -258,12 +259,11 @@ a {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     margin-right: 0;
-    flex: 1;
-    position: absolute;
     z-index: 999;
     .container {
       max-width: 720px;
       .row {
+        max-width: 100%;
         margin: auto;
         padding-top: 18px;
         .project-template {

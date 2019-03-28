@@ -63,8 +63,7 @@ $XL: 1170px;
 .container {
  display: flex;
  @include responsive($SM){
-  display: block;
-  position: relative;
+  flex-direction: column;
  }
 }
 
@@ -110,7 +109,7 @@ $XL: 1170px;
         text-decoration: none;
         color: $color-link1;
         display: block;
-        padding: $pd-1 $pd-2;
+        padding: 0.5rem 0rem;
         font-size: $font-size;
         text-transform: capitalize;
         font-weight: $fw-midium;
@@ -156,7 +155,7 @@ $XL: 1170px;
       flex-wrap: wrap;
       flex-direction: column;
       box-sizing: border-box;
-      padding: $fs-large 0 $fs-large $pd-2;
+      padding: $fs-large 0 $fs-large 0;
       margin-right: 2rem;
       margin-bottom: 0;
       list-style: none;
@@ -165,7 +164,6 @@ $XL: 1170px;
       .disable {
         font-size: $fs-medium;
         color: $color-link5;
-        padding-left: $mr1;
         padding-bottom: $mr1;
         letter-spacing: $letter-space;
         font-family: $font-family;
@@ -177,7 +175,7 @@ $XL: 1170px;
           text-decoration: none;
           color: $color-link2;
           display: block;
-          padding: 0$pd-1 $font-size;
+          padding: 0 0 16px;
           font-size: $font-size;
           text-transform: capitalize;
           font-weight: $fw-midium ;
@@ -351,14 +349,15 @@ $XL: 1170px;
     }
     .navbar-main {
       background: $bd-color2;
-      position: absolute;
-      left:-$top;
+      position: fixed;
+      left:-272px;
       height: auto;
       top: $top;
       overflow-y: auto;
       z-index: 10;
       padding-top: $mr;
       padding-left: $pd-1;
+      max-width: 264px;
     }
     .admin {
       width: 30%;
